@@ -26,3 +26,58 @@ my_robot_controller/
 │   └── turtle_controller_service.py
 └── README.md
 ```
+
+---
+
+## How to Download and Run
+
+### 1. Clone the Repository
+```bash
+cd ~/ros2_ws/src
+git clone https://github.com/<your-username>/<your-repo-name>.git
+```
+
+### 2. Build the Package
+```bash
+cd ~/ros2_ws
+colcon build --packages-select my_robot_controller
+```
+
+### 3. Source the Workspace
+```bash
+source install/setup.bash
+```
+
+### 4. Launch the Turtlesim Node
+```bash
+ros2 run turtlesim turtlesim_node
+```
+
+### 5. Run the ROS2 Nodes
+In a new terminal (don’t forget to source the workspace in each terminal):
+```bash
+source install/setup.bash
+```
+
+Run any of the following nodes:
+```bash
+ros2 run my_robot_controller my_first_node
+ros2 run my_robot_controller pose_subscriber
+ros2 run my_robot_controller draw_circle
+ros2 run my_robot_controller turtle_controller
+ros2 run my_robot_controller turtle_controller_service
+```
+
+---
+
+## Notes
+- Make sure Python files are executable:
+```bash
+chmod +x *.py
+```
+- Replace `<your-username>` and `<your-repo-name>` with your actual GitHub username and repository name.
+
+---
+
+## License
+MIT License
