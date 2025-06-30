@@ -79,5 +79,3 @@ chmod +x *.py
 
 ---
 
-## License
-MIT License
