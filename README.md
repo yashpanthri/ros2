@@ -1,10 +1,17 @@
-# ros2
-This repository has basics of ROS2 namely - publisher, subscriber and ROS services code.
+# ROS2 Basics with Turtlesim – my_robot_controller
 
+This repository contains beginner-friendly **ROS2 Python nodes** using the `turtlesim` simulator. It helps in learning core ROS2 concepts like publishers, subscribers, services, and timers.
 
+---
 
+## Project Files
+- `my_first_node.py` – Basic timer node that prints a counter every second.
+- `pose_subscriber.py` – Subscribes to `/turtle1/pose` and logs the turtle's position.
+- `draw_circle.py` – Publishes velocity commands to move the turtle in a circular path.
+- `turtle_controller.py` – Turtle controller that changes the turtle's speed based on its position.
+- `turtle_controller_service.py` – Advanced controller that changes the turtle’s pen color using ROS2 services based on its position.
 
-'''Folder Structure'''
+```text
 my_robot_controller/
 ├── package.xml
 ├── setup.py
@@ -18,3 +25,4 @@ my_robot_controller/
 │   ├── turtle_controller.py
 │   └── turtle_controller_service.py
 └── README.md
+```
